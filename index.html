@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111827">
+  <title>Family AI Gateway</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card" id="loginCard">
+    <div class="logo">🤖</div>
+    <h1>Family AI Gateway</h1>
+    <p class="subtitle">Secure family access</p>
+
+    <input id="tokenInput"
+           type="password"
+           placeholder="Enter family token"
+           autocomplete="off"
+           spellcheck="false">
+
+    <button id="loginBtn">Continue</button>
+    <p id="message" class="message"></p>
+
+    <div class="note">
+      Enter the family access token to continue.
+    </div>
+  </main>
+
+  <main class="card hidden" id="welcomeCard">
+    <div class="logo success">✓</div>
+    <h1>Access Granted</h1>
+    <p class="subtitle">Welcome to the Family AI Gateway.</p>
+
+    <div class="info">
+      <div class="status"><span></span> Connected</div>
+      <p>Your family access has been verified successfully.</p>
+    </div>
+
+    <button class="secondary" id="logoutBtn">Lock Page</button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
